@@ -14,3 +14,17 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
+java-example/chromedriver.exe
+chromedriver.exe
+geckodriver.exe
+java-example/geckodriver.exe
+java-example/build/tmp/compileTestJava/previous-compilation-data.bin
+java-example/build/test-results/test/binary/results.bin
+java-example/build/test-results/test/binary/output.bin.idx
+java-example/build/test-results/test/binary/output.bin
+java-example/build/reports/tests/test/js/report.js
+java-example/build/reports/tests/test/index.html
+java-example/build/reports/tests/test/css/style.css
+java-example/build/reports/tests/test/css/base-style.css
+java-example/build/classes/java/test/ru/stqa/training/selenium/MyFirstTest.class
+java-example/build/classes/java/test/ru/stqa/training/selenium/LitecartLogin.class
