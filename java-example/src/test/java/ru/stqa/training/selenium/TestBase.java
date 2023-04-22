@@ -12,6 +12,20 @@ public class TestBase {
   public WebDriver driver;
   public WebDriverWait wait;
 
+  public boolean isElementPresent(By locator){
+    try{
+      driver.findElement(locator);
+      return  true;
+    }catch (NoSuchElementException ex){
+      return false;
+    }
+  }
+
+  public boolean areElementsPresent (By locator) {
+    return driver.findElements(locator).size() > 0;
+  }
+
+
   @Before
   public void start() {
     if (tlDriver.get() != null) {
