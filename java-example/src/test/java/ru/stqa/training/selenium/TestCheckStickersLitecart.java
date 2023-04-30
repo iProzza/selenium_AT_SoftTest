@@ -9,20 +9,27 @@ import java.util.List;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class TestCheckStickers extends TestBase{
+public class TestCheckStickersLitecart extends TestBase{
 
   @Test
   public void stickersTest(){
+    //Открытие браузера по заданному урлу
     driver.get("http://localhost:8081/litecart/en/");
+    //Ждем, пока в title не появится "Online Store | My Store"
     wait.until(titleIs("Online Store | My Store"));
 
+    //Создаем список вебэлементов productsCount по имени класса
     List<WebElement> productsCount = driver.findElements(By.className("product column shadow hover-light"));
 
+    //Проходимся циклом по списку
     for (WebElement product : productsCount) {
+      //Кладем в перем. stickers элементы по локатору //div[contains(@class,"sticker")]
       List<WebElement> stickers = product.findElements(By.xpath("//div[contains(@class,\"sticker\")]"));
 
+
       if(stickers.size() == 1){
-        Assert.assertTrue("У каждого товара один стикер", true);
+        //Если кол-во стикеров по локатору != 1, то показываем это сообщение
+        Assert.assertTrue("У каждого товара не один стикер", false);
       }
     }
 
