@@ -28,7 +28,7 @@ public class TestProductCart extends TestBase {
     driver.findElements(By.cssSelector("div#box-campaigns li")).get(0).click();
     Select selectProduct = new Select(driver.findElement(By.name("options[Size]")));
     selectProduct.selectByValue("Small");
-    
+
     //Добавляем товар в корзину
     driver.findElement(By.cssSelector("button[name='add_cart_product']")).click();
     sleep(1000);
