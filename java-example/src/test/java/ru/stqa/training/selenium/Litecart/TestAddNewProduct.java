@@ -1,17 +1,17 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.Litecart;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import ru.stqa.training.selenium.TestBase;
 
 import java.io.File;
 
 import static java.lang.Thread.sleep;
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class TestAddNewProduct extends TestBase{
+public class TestAddNewProduct extends TestBase {
 
   private File image = new File("src/test/resources/Super_Sapog.jpg");
 

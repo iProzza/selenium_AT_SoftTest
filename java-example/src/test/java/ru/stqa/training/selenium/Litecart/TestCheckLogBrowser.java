@@ -1,10 +1,11 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.Litecart;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.logging.LogEntry;
+import ru.stqa.training.selenium.TestBase;
 
 import java.util.List;
 

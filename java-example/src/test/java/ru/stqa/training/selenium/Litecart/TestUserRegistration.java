@@ -1,12 +1,13 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.Litecart;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
+import ru.stqa.training.selenium.TestBase;
 
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class TestUserRegistration extends TestBase{
+public class TestUserRegistration extends TestBase {
 
 
 

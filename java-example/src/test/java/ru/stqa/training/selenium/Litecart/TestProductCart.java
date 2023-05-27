@@ -1,15 +1,11 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.Litecart;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import ru.stqa.training.selenium.TestBase;
-
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import static java.lang.Thread.sleep;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;

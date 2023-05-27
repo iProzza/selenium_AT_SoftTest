@@ -1,13 +1,13 @@
-package ru.stqa.training.selenium;
+package ru.stqa.training.selenium.Litecart;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import ru.stqa.training.selenium.TestBase;
 
 import static org.junit.Assert.assertFalse;
 
 
-public class MyFirstTest extends TestBase{
+public class MyFirstTest extends TestBase {
 
   @Test
   public void myFirstTest() {
